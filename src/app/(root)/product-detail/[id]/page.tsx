@@ -39,7 +39,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
             <CarouselContent>
               {productDetail?.imgs.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-64 sm:h-80 lg:h-96 w-full mb-6">
+                  <div className="relative h-80 sm:h-80 lg:h-96 w-full mb-6">
                     <Image
                       src={img}
                       alt={productDetail?.title}
