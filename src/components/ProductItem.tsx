@@ -13,7 +13,6 @@ export default function ProductItem({
   description,
   price,
   category,
-  getProductDetail,
 }: ProductType) {
   const router = useRouter();
 
@@ -22,17 +21,17 @@ export default function ProductItem({
       <div className="w-full sm:w-[350px] bg-white rounded-lg shadow-md overflow-hidden">
         {/* Rasm */}
 
-        <Carousel className="w-full">
+        <Carousel className="w-full sm:w-[350px]">
           <CarouselContent>
             {imgs.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-48">
+                <div className="w-full relative h-48">
                   <Image
                     src={img}
                     alt={title}
                     layout="fill"
                     objectFit="cover"
-                    className="w-full h-full object-cover"
+                    className="object-cover"
                   />
                 </div>
               </CarouselItem>

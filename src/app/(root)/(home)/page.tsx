@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="p-10 bg-[#D4D4D7] min-h-[100vh]">
       <Categories getCategoryProduct={getCategoryProduct} />
-      <div className="flex flex-wrap justify-center mt-10 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
         {products.length ? (
           products.map((product) => (
             <ProductItem key={product._id} {...product} />
