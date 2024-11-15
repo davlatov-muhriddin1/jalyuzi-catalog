@@ -63,7 +63,9 @@ export default function ProductItem({
             <Button onClick={() => router.push(`/product-detail/${_id}`)}>
               To'liq malumot olish
             </Button>
-            <Button>Buyurtma Berish</Button>
+            <a href="https://t.me/aziz_hasanov7777">
+              <Button>Buyurtma Berish</Button>
+            </a>
           </div>
         </div>
       </div>

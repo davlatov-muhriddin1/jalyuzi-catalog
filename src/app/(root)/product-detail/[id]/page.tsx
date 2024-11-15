@@ -74,7 +74,9 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
           </p>
 
           {/* Tugma */}
-          <Button className="w-full font-semibold py-4">Buyurtma berish</Button>
+          <a href="https://t.me/aziz_hasanov7777">
+            <Button>Buyurtma Berish</Button>
+          </a>
         </div>
       ) : (
         <div className="flex justify-center py-10">
